@@ -18,7 +18,7 @@ features = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare']
 X = train_data[features]
 y = train_data['Survived']
 
-X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=40)
+X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Training the Decision Tree model
 dt_model = DecisionTreeClassifier(random_state=42)
